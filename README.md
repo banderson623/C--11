@@ -14,4 +14,6 @@ http://stackoverflow.com/questions/14228856/how-to-compile-c-with-c11-support-in
 
 ## Tutorial's referenced
 
-1. http://www.codeproject.com/Articles/570638/Ten-Cplusplus11-Features-Every-Cplusplus-Developer
+1. [Ten C++11 Features Every C++ Developer Should Use](http://www.codeproject.com/Articles/570638/Ten-Cplusplus11-Features-Every-Cplusplus-Developer)
+
+I'll eventually end up writing about this at [BitByteYum](http://bitByteYum.com) after I get a better handle on it.
