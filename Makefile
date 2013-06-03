@@ -7,8 +7,13 @@ build: Makefile
 clean:
 	rm -rf "$(BUILD_DIRECTORY)"
 
-auto: build auto/basic.cpp
-	$(COMPILER) auto/basic.cpp -o $(BUILD_DIRECTORY)/auto_basic
+auto: build basic.cpp
+	$(COMPILER) basic.cpp -o $(BUILD_DIRECTORY)/auto
 
-run: auto
-	./$(BUILD_DIRECTORY)/auto_basic
+decltype: build decltype.cpp
+	$(COMPILER) decltype.cpp -o $(BUILD_DIRECTORY)/decltype
+
+
+run: auto decltype
+	./$(BUILD_DIRECTORY)/auto
+	./$(BUILD_DIRECTORY)/decltype
