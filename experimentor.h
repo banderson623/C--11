@@ -14,7 +14,9 @@ public:
 
 
 bool ExperimentorInterface::run(){
+    std::cout << "-------------------------------------------" << std::endl;
     std::cout << "Testing: " << getNameOfTest() << std::endl;
+    std::cout << "-------------------------------------------" << std::endl;
     return test();
 }
 

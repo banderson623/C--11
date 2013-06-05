@@ -39,7 +39,6 @@ bool DecltypeTest::test(){
 
 int main (int /* argc */, char** const /* argv[]*/)
 {
-    std::cout << "-------------------------------------------" << std::endl;
     DecltypeTest test = DecltypeTest();
     test.run();
     return 0;

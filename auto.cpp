@@ -55,7 +55,6 @@ public:
 
 int main (int /* argc */, char** const /* argv[]*/)
 {
-    std::cout << "-------------------------------------------" << std::endl;
     AutoBasic e = AutoBasic();
     e.run();
     // delete e;
