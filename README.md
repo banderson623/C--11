@@ -6,6 +6,7 @@ So far I've tried:
 
 1. [auto](http://stackoverflow.com/questions/8542873/c11-auto-semantics)
 2. [decltype](http://en.wikipedia.org/wiki/Decltype)
+3. [nullptr](http://stackoverflow.com/questions/13816385/what-are-the-advantages-of-using-nullptr)
 
 ## Getting it running in OS X
 

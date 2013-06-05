@@ -37,6 +37,10 @@ bool Nullptr::test(){
     // More information in:
     //http://stackoverflow.com/questions/1282295/what-exactly-is-nullptr
     
+    // Great explanantion
+    // http://stackoverflow.com/questions/13816385/what-are-the-advantages-of-using-nullptr
+    
+    
     if(!aPointerForAnInteger){
         std::cout<< "can be used directly in an if statement " << std::endl;
     }
