@@ -1,6 +1,6 @@
 #C++11
 
-Playground to try out C++11 ideas
+My sandbox to dabble with C++11's new features.
 
 So far I've tried:
 
