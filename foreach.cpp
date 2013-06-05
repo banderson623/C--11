@@ -1,4 +1,6 @@
 #include "experimentor.h"
+#include <vector>
+#include <map>
 
 class ForEach : public ExperimentorInterface {
 public:
@@ -25,6 +27,31 @@ bool ForEach::test(){
 
     for(const auto& num : favoriteNumbers){
         std::cout << "wait, now my favorite is " << num << std::endl;
+    }
+    
+    
+    typedef std::vector<std::string> Sentence;
+    Sentence havingFun;
+    havingFun.push_back("Hello");
+    havingFun.push_back("cruel");
+    havingFun.push_back("world");
+        
+    for(const auto& word : havingFun){
+        std::cout << word << " ";
+    }
+    std::cout << std::endl;
+    
+    //It even works with maps
+    typedef std::map<int,Sentence> Paragraph;
+    Paragraph shortStory;
+    shortStory[1] = havingFun;
+    
+    for(const auto& key : shortStory){
+        std::cout << key.first << ": ";
+        for(const auto& sentence : key.second){
+            std::cout << sentence << " ";
+        }
+        std::cout << std::endl;
     }
     
     return true;
