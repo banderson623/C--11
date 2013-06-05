@@ -12,6 +12,11 @@ public:
    /* Simple test for decltype, 
     * right from http://www.codeproject.com/Articles/570638/Ten-Cplusplus11-Features-Every-Cplusplus-Developer
     */
+    
+    // The return type is declared as auto, 
+    // ....it takes the return type from the fancy
+    // decltype keyword that produces the return type from the operator+
+    // defined by the return type of  t1::operator+(t2)....
     template <typename T1, typename T2>
     auto compose(T1 t1, T2 t2) -> decltype(t1 + t2)
     {
