@@ -8,6 +8,7 @@ So far I've tried:
 2. [decltype](http://en.wikipedia.org/wiki/Decltype)
 3. [nullptr](http://stackoverflow.com/questions/13816385/what-are-the-advantages-of-using-nullptr)
 4. Ranged for loops, like foreach()...
+5. Override and final identifiers
 
 ## Getting it running in OS X
 

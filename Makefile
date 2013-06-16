@@ -1,7 +1,7 @@
 COMPILER=clang++ -std=c++11 -stdlib=libc++ -Weverything -Wno-c++98-compat
 BUILD_DIRECTORY=build
 
-all: auto decltype nullptr foreach
+all: auto decltype nullptr foreach override
 
 build: Makefile
 	mkdir -p $(BUILD_DIRECTORY)
@@ -21,8 +21,13 @@ nullptr: build nullptr.cpp
 foreach: build foreach.cpp
 	$(COMPILER) foreach.cpp -o $(BUILD_DIRECTORY)/foreach
 
-run: auto decltype nullptr
+override: build override.cpp
+	$(COMPILER) override.cpp -o $(BUILD_DIRECTORY)/override
+
+
+run: auto decltype nullptr foreach override
 	./$(BUILD_DIRECTORY)/auto
 	./$(BUILD_DIRECTORY)/decltype
 	./$(BUILD_DIRECTORY)/nullptr
 	./$(BUILD_DIRECTORY)/foreach
+	./$(BUILD_DIRECTORY)/override	
